@@ -15,11 +15,10 @@ function updatePrice (iteamId , price){
 
 };
 
-document.getElementById("sixteenGB").addEventListener("click",function(){
-updatePrice('memory-cost' , 300);
-});
+function onClick (clickId , updateId , price){
+    document.getElementById(clickId).addEventListener("click",function(){
+        updatePrice(updateId , price);
+        });
+}
 
-document.getElementById("eightGB").addEventListener('click' , function(){
-    updatePrice('memory-cost' , 100);
-})
-
+onClick("eightGB", "memory-cost" , "200" );
