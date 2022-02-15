@@ -21,4 +21,10 @@ function onClick (clickId , updateId , price){
         });
 }
 
-onClick("eightGB", "memory-cost" , "200" );
+onClick("eightGB", "memory-cost" , 200 );
+onClick("sixteenGB" , "memory-cost" , 300);
+onClick("ssd1" , "storage-cost" , 700);
+onClick ("ssd2" , "storage-cost" , 1300);
+onClick ("ssd3" , "storage-cost" , 2500);
+onClick("free-delivery" , "delivery-cost" , 0);
+onClick("paid-delivery" , "delivery-cost" , 40);
