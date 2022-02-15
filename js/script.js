@@ -13,8 +13,13 @@ function updatePrice (iteamId , price){
     const total = document.getElementById("total-price");
     total.innerText = totalPrice;
 
-}
+};
 
 document.getElementById("sixteenGB").addEventListener("click",function(){
 updatePrice('memory-cost' , 300);
+});
+
+document.getElementById("eightGB").addEventListener('click' , function(){
+    updatePrice('memory-cost' , 100);
 })
+
